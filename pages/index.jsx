@@ -4,6 +4,7 @@ import { getCookie } from "cookies-next";
 import { useEffect } from "react";
 import { verifica } from "../services/user";
 import { BiUserCircle } from "react-icons/Bi";
+import { AiFillCar } from "react-icons/Ai";
 
 export default function Home() {
   return (
@@ -24,7 +25,9 @@ export default function Home() {
           </div>
           <h2 class="person">Douglas Junior</h2>
         </div>
-        <div class="icon_veiculo">Icone carro</div>
+        <div class="icon_veiculo">
+          <AiFillCar />
+        </div>
         <div class="resto">CARRO</div>
       </div>
     </div>

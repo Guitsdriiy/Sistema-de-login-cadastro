@@ -59,6 +59,7 @@ body {
   align-items: center;
 }
 .icon_veiculo {
+  font-size: 60px;
   background-color: rgb(255, 0, 191);
   float: left;
   text-align: center;

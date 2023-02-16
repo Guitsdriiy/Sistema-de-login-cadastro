@@ -7,8 +7,12 @@ import { BiUserCircle } from "react-icons/Bi";
 import { FaTractor } from "react-icons/Fa";
 
 export default function Home() {
+  const hadleClick = (e) => {
+    e.preventDefault();
+    // console.log("Clicou");
+  };
   return (
-    <div>
+    <div className="container">
       <div>
         <h1 class="title">Visão Geral</h1>
       </div>
@@ -24,11 +28,51 @@ export default function Home() {
             <div class="tres"></div>
           </div>
           <h2 class="person">Douglas Junior</h2>
+          <div className="btn_1"></div>
+          <div className="btn_2">
+            <div className="menu">
+              <ul className="list">
+                <li>
+                  <button class="btn" type="submit" onClick={hadleClick}>
+                    voce
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" type="submit" onClick={hadleClick}>
+                    o mar
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" type="submit" onClick={hadleClick}>
+                    e ela
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" type="submit" onClick={hadleClick}>
+                    casa
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" type="submit" onClick={hadleClick}>
+                    map
+                  </button>
+                </li>
+                <li>
+                  <button class="btn" type="submit" onClick={hadleClick}>
+                    carro
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="btn_3"></div>
         </div>
         <div class="icon_veiculo">
           <FaTractor />
         </div>
-        <div class="resto">CARRO</div>
+        <div class="resto">
+          <span>Placa ABC-1234 - Uno Fire</span>
+        </div>
       </div>
     </div>
   );
